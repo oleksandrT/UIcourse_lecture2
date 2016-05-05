@@ -1,0 +1,288 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	color: #3C3C3C;
+	background-color: #efefef;
+	border-top: 2px solid #9e46b1;
+}
+
+strong {
+	font-weight: 600;
+}
+
+h1 { 
+	font-size: 29px;
+	line-height: 1.38em;
+    letter-spacing: 0.01em;
+    margin-bottom: 45px;
+}
+
+p {
+	font-size: 17px;
+    line-height: 1.2em;
+    margin-bottom: 24px;
+}
+
+i {
+    font-style: italic;
+}
+
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	font-size: 17px;
+    letter-spacing: 0.05em;
+    margin-bottom: 36px;
+}
+
+ul li {
+	margin-bottom: 6px;
+}
+
+
+.logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+    margin-left: -90px;
+    z-index: 4;
+}
+
+.left-col, .right-col {
+	width: 50%;
+	padding-top: 122px;
+}
+
+.left-col {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	text-align: center;
+	background: #ddd url("../images/background-img.jpg") no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+	.left-col .content {
+		padding: 0 3%;
+	}
+
+	.left-col h1 {
+		font-size: 36px;
+		line-height: 45px;
+		text-transform: uppercase;
+		letter-spacing: 0.07em;
+		margin-bottom: 10px;
+	}
+
+	.left-col .form {
+		width: 65%;
+		margin: 0 auto 18px;
+	}
+
+	.left-col .form:before, .left-col .form:after {
+		content: ' ';
+		display: block;
+		width: 1px;
+	    height: 30px;
+		margin: 0 auto;
+		background-color: #fff;
+	}
+
+	.left-col .form__container:before, .left-col .form__container:after {
+		content: '\25AA';
+		display: block;
+	    font-size: 26px;
+	}
+
+	.left-col input {
+		width: 100%;
+		border: 2px solid #fff;
+		outline: 0;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 12px 0;
+		margin: 9px 0;
+		font-size: 1em;
+	}
+
+	.left-col input:-moz-placeholder, .left-col input::-webkit-input-placeholder {
+		color: #fff;
+	}
+
+	.left-col input:not([type='submit']) {
+		background-color: transparent;
+		color: #fff;
+	}
+
+	.left-col input:not([type='submit']):focus {
+		border: 2px solid #f2ca80;
+	}
+
+	.left-col input[type='submit'] {
+		background-color: #fff;
+		color: #3C3C3C;
+	}
+
+	.left-col input[type='submit']:hover {
+		background-color: #f2ca80;
+		border: 2px solid #f2ca80;
+	}
+
+	.left-col .note {
+		text-transform: uppercase;
+		font-size: 1.2em;
+		line-height: 1.2em;
+		letter-spacing: 0.11em;
+	}
+
+	.left-col .star {
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	}
+
+
+.right-col {
+	float: right;
+	padding: 124px 2% 0;
+}
+
+	.right-col section {
+		padding-bottom: 28px;
+		margin-bottom: 40px;
+	}
+
+	.right-col section:not(:last-child) {
+		border-bottom: 4px solid #f2ca80;
+	}
+
+	ul.clients {
+		padding: 9px 0 14px 10px;
+		margin-bottom: 0;
+	}
+
+		ul.clients li {
+		    display: block;
+		    width: 20%;
+		    float: left;
+		}
+
+	ul.clients:after {
+		display: table;
+		content: " ";
+		clear: both;
+	}
+
+	ol.skills {
+	    list-style-type: decimal;
+	    counter-reset: order;
+	    margin-bottom: 42px;
+	}
+
+		ol.skills li {
+			display: block;
+			width: 50%;
+			float: left;
+			position: relative;
+			padding-left: 45px;
+			line-height: 1.3em;
+		    margin-bottom: 63px;
+		}
+
+		ol.skills li:nth-child(2n+1) {
+			clear: left;
+		}
+
+		ol.skills li:before {
+			counter-increment: order;
+			content: counter(order);
+			display: inline-block;
+			border: 3px solid #f2ca80;
+			border-radius: 50%;
+			padding: 4px 10px;
+			margin-right: 9px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		ol.skills li:last-child {
+			margin-bottom: 0;
+		}
+
+	ol.skills:after {
+	    display: table;
+		content: " ";
+		clear: both;
+	}
+
+	.heading-format {
+		margin-top: 98px;
+	}
+
+	.block__format {
+		display: inline-block;
+		position: relative;
+		padding: 17px 34px 1px;
+	    margin-bottom: 67px;
+	}
+
+	.block__format:last-child {
+		margin-bottom: 51px;
+	}
+
+	.block__format:before {
+		content: " ";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 4px solid #f2ca80;
+		height: 100%;
+		width: 12px;
+		border-right: none;
+	}
+
+	.block__format:after {
+		content: " ";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: 4px solid #f2ca80;
+		height: 100%;
+		width: 12px;
+		border-left: none;
+	}
+
+		.format__title {
+			font-size: 19px;
+			text-transform: uppercase;
+			letter-spacing: 0.02em;
+			margin-bottom: 2px;
+		}
+
+		.format__price {
+			font-size: 39px;
+			font-weight: 700;
+	        margin-bottom: 11px;
+		}
+
+		.format__description {
+			font-size: 20px;
+		}
+
+	.chapter__title {
+		display: inline-block;
+		background-color: #f2ca80;
+		padding: 15px 20px;
+		font-weight: 600;
+		letter-spacing: 0.05em;
+		font-size: 20px;
+		margin-top: 7px;
+	}
